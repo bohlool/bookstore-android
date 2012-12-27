@@ -19,6 +19,6 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	//comment by Viet
+	//comment by Viet // Deleted.
 
 }
