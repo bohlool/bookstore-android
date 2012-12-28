@@ -5,9 +5,11 @@ import java.util.List;
 
 import org.csun.bookstore.provider.Book;
 import org.csun.bookstore.provider.BookManager;
+import org.csun.bookstore.view.BookShelfView;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.GridView;
 import android.widget.ListView;
 
 public class BookShelfActivity extends Activity {
@@ -15,7 +17,7 @@ public class BookShelfActivity extends Activity {
 	private BookItemAdapter mAdapter = null;
 	private List<Book> mBookList;
 	private BookManager mBookManager;
-	private ListView mListView;
+	private GridView mBookShelfView;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -25,8 +27,8 @@ public class BookShelfActivity extends Activity {
 		addDummyBooks(mBookManager);
 		mBookList = mBookManager.retrieveBooks();
 		mAdapter = new BookItemAdapter(getApplicationContext(), mBookList);
-		mListView = (ListView) findViewById(R.id.activity_book_shelf_xml_listview_book_list);
-		mListView.setAdapter(mAdapter);
+		mBookShelfView = (GridView) findViewById(R.id.activity_book_shelf_xml_gridview_shelf);
+		mBookShelfView.setAdapter(mAdapter);
 	}
 	
 	private void addDummyBooks(BookManager bm) {
