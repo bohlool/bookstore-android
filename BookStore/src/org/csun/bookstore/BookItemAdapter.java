@@ -42,8 +42,6 @@ public class BookItemAdapter extends BaseAdapter {
 	public static class ItemViewHolder {
 		public ImageView bookImageView;
 		public TextView nameTextView;
-		public TextView authorTextView;
-		public TextView isbnTextView;
 	}
 
 	@Override
@@ -53,16 +51,16 @@ public class BookItemAdapter extends BaseAdapter {
 			mViewHolder = new ItemViewHolder();
 			mViewHolder.bookImageView = (ImageView) convertView.findViewById(R.id.book_item_xml_imageview_book_cover);
 			mViewHolder.nameTextView = (TextView) convertView.findViewById(R.id.book_item_xml_textview_name);
-			mViewHolder.authorTextView = (TextView) convertView.findViewById(R.id.book_item_xml_textview_author);
-			mViewHolder.isbnTextView = (TextView) convertView.findViewById(R.id.book_item_xml_textview_isbn);
 			convertView.setTag(mViewHolder);
 		} else {
 			mViewHolder = (ItemViewHolder) convertView.getTag();
 		}
 		
-		mViewHolder.nameTextView.setText(mBookList.get(position).getName());
-		mViewHolder.authorTextView.setText(mBookList.get(position).getAuthor());
-		mViewHolder.isbnTextView.setText(mBookList.get(position).getISBN());
+		if (mBookList.get(position).getName().length() > 10) {
+			mViewHolder.nameTextView.setText(mBookList.get(position).getName().substring(0, 10));
+		} else {
+			mViewHolder.nameTextView.setText(mBookList.get(position).getName());
+		}
 		return convertView;
 	}
 }

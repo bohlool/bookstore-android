@@ -58,32 +58,32 @@ containing a value of this type.
     public static final class drawable {
         public static final int background_paper=0x7f020000;
         public static final int background_shelf=0x7f020001;
-        public static final int details_paper=0x7f020002;
-        public static final int ic_btn_search=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int ic_menu_add=0x7f020005;
-        public static final int ic_menu_check=0x7f020006;
-        public static final int ic_menu_scan=0x7f020007;
-        public static final int search_plate=0x7f020008;
-        public static final int shelf_panel=0x7f020009;
-        public static final int shelf_shadow=0x7f02000a;
-        public static final int spotlight=0x7f02000b;
-        public static final int spotlight_blue=0x7f02000c;
-        public static final int unknown_book=0x7f02000d;
-        public static final int unknown_cover=0x7f02000e;
-        public static final int unknown_cover_no_shadow=0x7f02000f;
-        public static final int web_left=0x7f020010;
-        public static final int web_right=0x7f020011;
+        public static final int book=0x7f020002;
+        public static final int details_paper=0x7f020003;
+        public static final int ic_btn_search=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int ic_menu_add=0x7f020006;
+        public static final int ic_menu_check=0x7f020007;
+        public static final int ic_menu_scan=0x7f020008;
+        public static final int search_plate=0x7f020009;
+        public static final int shelf=0x7f02000a;
+        public static final int shelf_panel=0x7f02000b;
+        public static final int shelf_shadow=0x7f02000c;
+        public static final int spotlight=0x7f02000d;
+        public static final int spotlight_blue=0x7f02000e;
+        public static final int unknown_book=0x7f02000f;
+        public static final int unknown_cover=0x7f020010;
+        public static final int unknown_cover_no_shadow=0x7f020011;
+        public static final int web_left=0x7f020012;
+        public static final int web_right=0x7f020013;
     }
     public static final class id {
         public static final int activity_book_shelf_xml_gridview_shelf=0x7f0a0000;
         public static final int activity_main_xml_button_others=0x7f0a0002;
         public static final int activity_main_xml_button_view=0x7f0a0001;
         public static final int book_item_xml_imageview_book_cover=0x7f0a0003;
-        public static final int book_item_xml_textview_author=0x7f0a0005;
-        public static final int book_item_xml_textview_isbn=0x7f0a0006;
         public static final int book_item_xml_textview_name=0x7f0a0004;
-        public static final int menu_settings=0x7f0a0007;
+        public static final int menu_settings=0x7f0a0005;
     }
     public static final class layout {
         public static final int activity_book_shelf=0x7f030000;
